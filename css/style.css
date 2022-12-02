@@ -1,0 +1,136 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+h1 {
+  color: #fff;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  margin-bottom: 25px;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
+.btn {
+  align-content: center;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  height: 48px;
+  justify-content: center;
+  width: 146px;
+}
+.btn-sedans {
+  border: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+}
+.btn-suvs {
+  border: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+.btn-luxury {
+  border: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+}
+
+.sedans,
+.suvs,
+.luxury {
+  padding: 15%;
+  width: 100%;
+
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.txt {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/************** MEDIA QUERIES *************/
+
+@media screen and (min-width: 495px) {
+  .sedans,
+  .suvs,
+  .luxury {
+    padding: 11%;
+  }
+}
+@media screen and (min-width: 660px) {
+  main {
+    flex-direction: row;
+    width: 100%;
+  }
+  .btn:hover {
+    background-color: rgb(255, 255, 255, 0);
+    cursor: pointer;
+  }
+  input[type="button"]:hover {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  .sedans {
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0;
+  }
+  .luxury {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .sedans,
+  .suvs,
+  .luxury {
+    padding: 10%;
+  }
+}
